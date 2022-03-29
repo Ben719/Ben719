@@ -13,5 +13,5 @@ function draw() {
   
 }
   
-  img - loadimage('https://ben719.github.io/Processing/')
+  img - loadimage('ben719.github.io')
    
