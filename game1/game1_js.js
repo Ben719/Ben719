@@ -2,15 +2,28 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score = 0;
+var img1, img2;
 
+function preload() {
+
+   img1 = loadImage('https://ben719.github.io/game1/Spacebattle%202.png'); //background LI
+   img2 = loadImage('https://ben719.github.io/game1/Ship%202.png');
+   
+}
+   
+  
 function setup() {
   createCanvas(600, 600);
+  let c =color('red'); //text color
+  fill(c);
   textAlign(CENTER);
   textSize(20);
 } // end of setup ===============
 
 function draw() {
-  background(220);
+  background(img1);
+  
+  
   
   levelOne();
   text(("Score: " + score),width/2,40);
